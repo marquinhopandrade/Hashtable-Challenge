@@ -28,7 +28,9 @@ namespace Hashtable_Challenge
                 if (tabelaEstudante.ContainsKey(s.Id))
                 {
                     Console.WriteLine("Sorry, A student with the same ID already Exists");
-                    Console.WriteLine("The ID: {0}",s.Id);
+                    Console.WriteLine("The ID: {0}", s.Id);
+                    s.Id = s.Id + 2;
+                    Console.WriteLine("The ID after the increment: {0}", s.Id);
                 }
                 else
                 {
